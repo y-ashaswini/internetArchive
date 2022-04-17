@@ -1,0 +1,102 @@
+/* Sections */
+body {
+    margin : 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+
+.top {
+    color: #FFE6BC;
+    padding : 2rem 3rem;
+}
+
+.op {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top : 2rem;
+}
+
+/* --------------------------------------------------------- */
+/* Components */
+
+.submit-btn {
+    width : 1.5rem;
+    filter: invert(78%) sepia(51%) saturate(183%) hue-rotate(356deg) brightness(104%) contrast(79%);
+    cursor: pointer;
+}
+.box {
+    width : 25rem;
+    margin : 1rem;
+    background-color: #C3B091;
+    position: relative;
+    overflow : hidden;
+    border-radius: 20px;
+}
+
+.usertopic {
+    outline : none;
+    color: #E4CDA7;
+    border-color: #E4CDA7;
+    background-color: black;
+    width : 20%;
+    
+}
+
+.click {
+    text-decoration: none;
+    background-color: black;
+    color : #FFE6BC;
+    padding : 0.5rem 0.8rem;
+    border-radius: 10px;
+    position: absolute;
+    bottom : 10px;
+    right : 10px;
+}
+
+.click:hover {
+    text-decoration: none;
+    background-color: #FFE6BC;
+    color : black;
+}
+
+/* --------------------------------------------------------- */
+/* Content Sections */
+
+.heading {
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+
+.subheading {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.title-1 {
+    font-size: 1.5rem;
+    line-height: 1;
+    padding : 1.5rem 2rem;
+    background-color: #C3B091;
+    /* color : #FFE6BC; */
+    color : black;
+    font-weight: bold;
+}
+
+.title-2 {
+    font-size: 1.2rem;
+    padding : 0.5rem 2rem;
+    background-color: #E4CDA7;
+    color : #8E806A;
+}
+
+.title-3 {
+    font-size: 1.2rem;
+    padding : 0.5rem 2rem;
+    background-color: #FFE6BC;
+    color : #8E806A;
+}
