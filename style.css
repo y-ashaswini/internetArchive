@@ -10,7 +10,7 @@ body {
 
 .top {
     color: #FFE6BC;
-    padding : 2rem 3rem;
+    padding : 2rem 5rem;
 }
 
 .op {
@@ -99,4 +99,28 @@ body {
     padding : 0.5rem 2rem;
     background-color: #FFE6BC;
     color : #8E806A;
+}
+
+
+@media screen and (max-width : 768px) {
+    .top {
+        padding : 2rem 3rem;
+    }
+    .usertopic {
+        width : 70%;
+    }
+    .heading {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    .top {
+        text-align: center;
+        padding : 2rem;
+    }
+    .usertopic {
+        width : 60%;
+    }
+
 }
