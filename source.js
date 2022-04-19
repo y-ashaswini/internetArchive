@@ -6,19 +6,25 @@ const data = async() => {
     const output = await response.json();
     // console.log(output.response.docs);
     l = output.response.docs.length;
-    
-    for(i=0; i<l; i++) {
-        const link = `https://archive.org/details/${output.response.docs[i].identifier}`
-        document.querySelector('.op').innerHTML += `<div class='box'>
-        <div class='title-1'>${output.response.docs[i].title}</div>
-        <div class='title-2'>Description : ${output.response.docs[i].description}</div>
-        <div class='title-3'>Mediatype : ${output.response.docs[i].mediatype}</div>
-        <div class='title-2'>Language : ${output.response.docs[i].language}</div>
-        <a href = ${link} target = '_blank' class='click'>Visit</a>
-        </div>`
+    if(l == 0) {
+        document.querySelector('.op').innerHTML = "<div style='color:#C3B091; font-size:2rem;'>sorry, no results for this query.</div>"
+    } else {
+        console.log('before: '+document.querySelector('.totop').classList.remove('invisible'))
+
+        for(i=0; i<l; i++) {
+            const link = `https://archive.org/details/${output.response.docs[i].identifier}`
+            document.querySelector('.op').innerHTML += `<div class='box'>
+            <div class='title-1'>${output.response.docs[i].title}</div>
+            <div class='title-2'>Description : ${output.response.docs[i].description}</div>
+            <div class='title-3'>Mediatype : ${output.response.docs[i].mediatype}</div>
+            <div class='title-2'>Language : ${output.response.docs[i].language}</div>
+            <a href = ${link} target = '_blank' class='click'>Visit</a>
+            </div>`
+        }
     }
     
 }
+
 
 function check() {
     document.querySelector('.op').innerHTML='';

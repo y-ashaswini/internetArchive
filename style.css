@@ -21,6 +21,10 @@ body {
     padding-top : 2rem;
 }
 
+.invisible {
+    visibility: hidden;
+}
+
 /* --------------------------------------------------------- */
 /* Components */
 
@@ -64,6 +68,25 @@ body {
     color : black;
 }
 
+.totop {
+    text-decoration: none;
+    background-color: black;
+    color : #C3B091;
+    border: solid #C3B091 10px;
+    padding : 1rem;
+    position: fixed;
+    right : 10px;
+    bottom : 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.totop:hover {
+    text-decoration: none;
+    color: black;
+    background-color : #C3B091;
+}
+
 /* --------------------------------------------------------- */
 /* Content Sections */
 
@@ -91,14 +114,14 @@ body {
     font-size: 1.2rem;
     padding : 0.5rem 2rem;
     background-color: #E4CDA7;
-    color : #8E806A;
+    color : #70614a;
 }
 
 .title-3 {
     font-size: 1.2rem;
     padding : 0.5rem 2rem;
     background-color: #FFE6BC;
-    color : #8E806A;
+    color : #70614a;
 }
 
 
